@@ -53,7 +53,8 @@ public class StatsService {
         int number = 0;
         for (int t : arr) {
             if (t < sum) {
-                t = number & number++;
+                t = number;
+                number++;
             }
 
         }
@@ -65,7 +66,8 @@ public class StatsService {
         int number = 0;
         for (int t : arr) {
             if (t > sum) {
-                t = number & number++;
+                t = number;
+                number++;
             }
 
         }
